@@ -1,0 +1,26 @@
+{
+  "name": "calculator",
+  "version": "1.0.0",
+  "description": "calculator",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alexey-petr0v/calculator.git"
+  },
+  "author": "Alexey-petr0v <alexey-petr0v@yandex.ru>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alexey-petr0v/calculator/issues"
+  },
+  "homepage": "https://github.com/Alexey-petr0v/calculator#readme",
+  "devDependencies": {
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
+}

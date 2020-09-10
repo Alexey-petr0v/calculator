@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+    * {
+        font-size: 24px
+    }
+    .input_table {
+        margin: 0 auto;
+        margin-top: 100px;
+    }
+    .buttons_table, .button_result_table {
+        margin: 0 auto;
+        text-align: center;
+    }
+    .button_result_table {
+        width: 420px;
+    }
+    input {
+        width: 406px;
+    }
+    .button {
+        width: 100px;
+        height: 50px;
+        cursor: pointer;
+        background:#888888
+    }
+    .number {
+        background:#AAAAAA
+    }
+    .result_table {
+        margin: 0 auto;
+    }
+    .result_table td {
+        width: 410px;
+        height: 50px;
+        border: 1px solid #DDDDDD;
+    }
+    .result_table input {
+        outline: none;
+        border: none;
+    }
+    </style>
+
+
+    <table class="input_table">
+        <tr><td><input type="text" id="input"></td></tr>
+    </table>
+
+    <table class="result_table">
+        <tr><td><input type="text" id="result" readonly></td></tr>
+    </table>
+
+    <table class="buttons_table">
+        <tr>
+            <td class="button" id="clear_all">C</td>
+            <td class="button" id="clear">←</td>
+            <td class="button" id="decimal">.</td>
+            <td class="button" id="division">/</td>
+        </tr>
+        <tr>
+            <td class="button number number_1" id="number_1">1</td>
+            <td class="button number" id="number_2">2</td>
+            <td class="button number" id="number_3">3</td>
+            <td class="button" id="multiplication">*</td>
+        </tr>
+        <tr>
+            <td class="button number" id="number_4">4</td>
+            <td class="button number" id="number_5">5</td>
+            <td class="button number" id="number_6">6</td>
+            <td class="button" id="addition">+</td>
+        </tr>
+        <tr>
+            <td class="button number" id="number_7">7</td>
+            <td class="button number" id="number_8">8</td>
+            <td class="button number" id="number_9">9</td>
+            <td class="button" id="subtraction">-</td>
+        </tr>
+        <tr>
+            <td class="button" id="left_parenthesis">(</td>
+            <td class="button number" id="number_0">0</td>
+            <td class="button" id="right_parenthesis">)</td>
+            <td class="button" id="button">=</td>
+        </tr>
+    </table>
+
+
+    <script type="text/javascript" src="bundle.js"></script>
+</body>
+</html>
