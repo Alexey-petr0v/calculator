@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+    * {
+        font-size: 24px
+    }
+    .input_table_obj {
+        margin: 0 auto;
+        margin-top: 100px;
+    }
+    .buttons_table_obj, .button_result_table_obj {
+        margin: 0 auto;
+        text-align: center;
+    }
+    .button_result_table_obj {
+        width: 420px;
+    }
+    input {
+        width: 406px;
+    }
+    .button_obj {
+        width: 100px;
+        height: 50px;
+        cursor: pointer;
+        background:#888888
+    }
+    .number_obj {
+        background:#AAAAAA
+    }
+    .result_table_obj {
+        margin: 0 auto;
+    }
+    .result_table_obj td {
+        width: 410px;
+        height: 50px;
+        border: 1px solid #DDDDDD;
+    }
+    .result_table_obj input {
+        outline: none;
+        border: none;
+    }
+    </style>
+
+
+    <table class="input_table_obj">
+        <tr><td><input type="text" id="input_obj"></td></tr>
+    </table>
+
+    <table class="result_table_obj">
+        <tr><td><input type="text" id="result_obj" readonly></td></tr>
+    </table>
+
+    <table class="buttons_table_obj" id="buttons_table_obj">
+        <tr>
+            <td class="button_obj" id="clear_all_obj">C</td>
+            <td class="button_obj" id="clear_obj">←</td>
+            <td class="button_obj add_obj" id="decimal_obj">.</td>
+            <td class="button_obj add_obj" id="division_obj">/</td>
+        </tr>
+        <tr>
+            <td class="button_obj number_obj add_obj">1</td>
+            <td class="button_obj number_obj add_obj">2</td>
+            <td class="button_obj number_obj add_obj">3</td>
+            <td class="button_obj add_obj" id="multiplication_obj">*</td>
+        </tr>
+        <tr>
+            <td class="button_obj number_obj add_obj">4</td>
+            <td class="button_obj number_obj add_obj">5</td>
+            <td class="button_obj number_obj add_obj">6</td>
+            <td class="button_obj add_obj" id="addition_obj">+</td>
+        </tr>
+        <tr>
+            <td class="button_obj number_obj add_obj">7</td>
+            <td class="button_obj number_obj add_obj">8</td>
+            <td class="button_obj number_obj add_obj">9</td>
+            <td class="button_obj add_obj" id="subtraction_obj">-</td>
+        </tr>
+        <tr>
+            <td class="button_obj add_obj" id="left_parenthesis_obj">(</td>
+            <td class="button_obj number_obj add_obj">0</td>
+            <td class="button_obj add_obj" id="right_parenthesis"_obj>)</td>
+            <td class="button_obj" id="button_obj">=</td>
+        </tr>
+    </table>
+
+
+    <script type="text/javascript" src="bundle.js"></script>
+</body>
+</html>
