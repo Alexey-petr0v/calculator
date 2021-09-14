@@ -8,7 +8,7 @@ if (document.getElementById("buttons_table")) {
     // result (=)
     document.getElementById("button").addEventListener("click", calculate, false);
     function calculate() {
-        result.value = (eval(input.value)).toFixed(20)
+        result.value = (eval(input.value)).toFixed(10)
     }
 
     // clear_all [С]

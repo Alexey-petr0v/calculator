@@ -9,7 +9,7 @@ class Result {
         
     }
     calculate_obj() {
-        this.result.value = (eval(this.input.value)).toFixed(20)
+        this.result.value = (eval(this.input.value)).toFixed(10)
     }
 }
 
